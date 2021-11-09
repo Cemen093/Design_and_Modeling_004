@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--<VBox alignment="TOP_CENTER" prefHeight="1500.0" prefWidth="2000.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" -->
+<!--      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.HelloController">-->
+
+<VBox prefHeight="645.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.HelloController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="205.0" prefWidth="1039.0">
+            <children>
+                <HBox prefHeight="0.0" prefWidth="910.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" />
+                        <TextField fx:id="_search" promptText="Enter request" />
+                    </children></HBox>
+                <HBox prefHeight="4.0" prefWidth="910.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Category:" />
+                        <TextField fx:id="_category" promptText="Enter category" />
+                    </children></HBox>
+                <HBox prefHeight="0.0" prefWidth="910.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Number of comments:" />
+                        <TextField fx:id="_number_comments_from" promptText="from" />
+                        <TextField fx:id="_number_comments_to" promptText="to" />
+                    </children></HBox>
+                <HBox prefHeight="18.0" prefWidth="910.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Number of likes" />
+                        <TextField fx:id="_number_likes_from" promptText="from" />
+                        <TextField fx:id="_number_likes_to" promptText="to" />
+                    </children></HBox>
+                <HBox prefHeight="1.0" prefWidth="910.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Per page" />
+                        <TextField fx:id="_per_page" promptText="Enter per page" />
+                    </children></HBox>
+                <HBox prefHeight="9.0" prefWidth="910.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wight imj" />
+                        <TextField fx:id="_wight_imj" promptText="Enter wight imj" />
+                    </children></HBox>
+                <HBox prefHeight="0.0" prefWidth="910.0">
+                    <children>
+                        <Button fx:id="send" mnemonicParsing="false" onAction="#onSendButtonClick" text="Send" />
+                    </children></HBox>
+                <HBox prefHeight="0.0" prefWidth="910.0">
+                    <children>
+                        <Button fx:id="pref" mnemonicParsing="false" onAction="#onPrefButtonClick" text="Pref" />
+                        <Label fx:id="labelPage" text="page: 1" />
+                        <Button fx:id="next" mnemonicParsing="false" onAction="#onNextButtonClick" text="Next" />
+                    </children></HBox>
+            </children>
+        </VBox>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+         <content>
+            <HBox fx:id="hBox" prefHeight="443.0" prefWidth="1039.0">
+               <children>
+                  <ImageView fx:id="imageView_01" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+    </children>
+</VBox>
